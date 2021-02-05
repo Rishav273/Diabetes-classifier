@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Diabetes Prediction Portal </title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1> Predit whether a patient is diabetic </h1>
+			</div>
+
+			<div id="content">
+				<div id="main">
+					<form action="{{ url_for('predict')}}" method="post">
+	    <h3>Fill in the details given below to get a churn prediction:</h3>
+
+    	<div class="leftcontact">
+			      <div class="form-group">
+			        <p>Patient's age: <span>*</span></p>
+			        <span class="icon-case"></span>
+				        <input name="patient_age"  name="patient_age" type="number" >
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p>Patient's glucose level: <span>*</span></p>
+            <span class="icon-case"></span>
+				<input name="glucose_level" required="required">
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Patient's Blood Pressure level (diastole/lower number): <span>*</span></p>	
+			<span class="icon-case"></span>
+                <input name="blood_pressure" required="required">
+                <div class="validation"></div>
+			</div>	
+
+			<div class="form-group">
+			<p>Patient's insulin level:  <span>*</span></p>
+			<span class="icon-case"></span>
+				<input name="insulin" required="required">
+                <div class="validation"></div>
+
+			<div class="form-group">
+			<p>Number of pregnancies (if any): <span>*</span></p>
+			<span class="icon-case"></span>
+				<input name="pregnancies" required="required">
+                <div class="validation"></div>
+			</div>	
+
+	
+			<div class="form-group">
+			<p>Patient's skin thickness: <span>*</span></p>
+			<span class="icon-case"></span>
+				<input name="skin_thickness" required="required">
+                <div class="validation"></div>
+			</div>	
+
+			<div class="form-group">
+			<p>Patient's Body Mass Index (BMI): <span>*</span></p>	
+			<span class="icon-case"></span>
+				<input name="bmi" required="required">
+                <div class="validation"></div>
+			</div>
+
+		<button  type="submit " class="btn btn-lg btn-info mb-5 ml-5" style="box-shadow: 0 4px 15px 0 rgba(49, 196, 100, 0.75); background-image: linear-gradient(to bottom, maroon,orange);"> Predict! </button>
+	
+</form>
+	
+	</div>
+	</div>
+
+
+
+			</div>
+
+
+		</div>
+			<div id="footer">
+				Copyright &copy; 2020 Rishav Majumdar.
+
+			</div>
+	</body>
+</head>
+
+</html>
+

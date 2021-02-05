@@ -1,0 +1,80 @@
+body {
+	background-color: beige;
+	text-shadow: all;
+	background-image:  
+}
+
+#container {
+	background-image: linear-gradient(to top,black,grey);
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	text-align: center;  
+}
+
+#header {
+	background-image: linear-gradient(to bottom, maroon,orange);
+	color: white;
+	text-align: center;
+}
+
+#content {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	background: beige;
+}
+
+button { 
+  	border: none;
+  	color: white;
+  	padding: 15px 25px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 26px;
+  	font-style: italic;
+  	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  	position: relative;
+  	left: 500px;
+}
+
+#footer {
+	text-align: right;
+	position: absolute;
+	right: 15px;
+	font-size: 18px;
+}
+
+.form-group {
+	font-style: oblique;
+	font-size: 18px;
+	text-decoration-color: red; 
+}
+
+h1 {
+	font-style: italic; 
+}
+
+.form-group span {
+	color: red;
+	font-style: oblique;
+}
+
+
+
+/* Styling for results.html */
+h3[role='alert'] {
+	font-style: oblique;
+	font-size: 30px;
+	position: relative;
+	right: 250px;
+}
+
+h4[role='alert'] {
+	font-style: oblique;
+	font-size: 20px;
+	position: relative;
+	right: 250px;
+}
